@@ -1,9 +1,7 @@
 !function(){
 var mtest=document.getElementById("test");
 
-var mhtml="<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src='https://www.googletagmanager.com/gtag/js?id=G-G52J1DKGNB'></script>
-<script>
+var mhtml="<script async src='https://www.googletagmanager.com/gtag/js?id=G-G52J1DKGNB'></script><script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
