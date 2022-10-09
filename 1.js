@@ -51,7 +51,7 @@
           "titlex": "//a[@class=\"stui-vodlist__thumb lazyload\"]/@title"
         }
       },
-      "webname": "libvio"
+      "webname": "txxlcdc"
     }
 
 
