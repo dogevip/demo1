@@ -1,5 +1,4 @@
-{
-  "web":[
+{"web":[
     {
       "type": 1,
       "webPlay": {
