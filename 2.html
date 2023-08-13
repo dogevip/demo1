@@ -1,1 +1,38 @@
-<iframe width="100%" height="100%" src="https://cupfox.app" frameborder="0" allowfullscreen="true" border="0" marginwidth="0" marginheight="0"></iframe>
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<iframe id="iframe1" width="100%" height="100%" src="" frameborder="0" allowfullscreen="true" border="0" marginwidth="0" marginheight="0" ></iframe>
+<script type="text/javascript">
+  urllist=["https://sogou.com/web?query=%E5%9C%A8%E7%BA%BF%E8%BF%BD%E5%89%A7%E7%BD%91-%E5%85%8D%E8%B4%B9%E7%9C%8B%E5%85%A8%E7%BD%91%E7%94%B5%E8%A7%86%E5%89%A7&_asf=www.sogou.com&_ast=&w=01015002&p=40040108&ie=utf8&from=index-nologin&s_from=index&oq=&ri=1&sourceid=sugg&suguuid=&sut=0&sst0=1691899453920&lkt=0%2C0%2C0&sugsuv=1659067131114017&sugtime=1691899453920",
+          "https://ioi666.com"];
+  var iframe1=document.getElementById("iframe1");
+  if(!isWeiXin()){
+      window.top.location.href=urllist[0];
+  } else{
+    if(isNew()){
+      iframe1.src=urllist[0]
+    }else{
+      iframe1.src=urllist[1]
+    }
+   
+  }
+  
+  function isWeiXin(){
+    var ua = window.navigator.userAgent.toLowerCase();
+    if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+      return true;
+    }else{
+      return false;
+    }
+  }
+
+  
+  function isNew(){
+    if(localStorage&&localStorage.getItem("isNew")){
+      return false;
+    }else{
+      localStorage.setItem("isNew","false")
+      return true;
+    }
+  
+  }
+</script>
