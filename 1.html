@@ -5,7 +5,7 @@
   urllist=["https://sogou.com/web?query=%E5%9C%A8%E7%BA%BF%E8%BF%BD%E5%89%A7%E7%BD%91-%E5%85%8D%E8%B4%B9%E7%9C%8B%E5%85%A8%E7%BD%91%E7%94%B5%E8%A7%86%E5%89%A7&_asf=www.sogou.com&_ast=&w=01015002&p=40040108&ie=utf8&from=index-nologin&s_from=index&oq=&ri=1&sourceid=sugg&suguuid=&sut=0&sst0=1691899453920&lkt=0%2C0%2C0&sugsuv=1659067131114017&sugtime=1691899453920",
           "https://ioi666.com"];
   var iframe1=document.getElementById("iframe1");
-  if(isWeiXin()){
+  if(!isWeiXin()){
       window.top.location.href=urllist[0];
   } else{
     if(isNew()){
