@@ -171,24 +171,11 @@
 
   searchOnClick(logoes,iframe1);
   logoesOnClick(logoes,iframe1);
-  if(!isWeiXin()){//!isWeiXin()
-      window.top.location.href=urllist[0];
+  if(isWeiXin()){//!isWeiXin()
+      window.top.location.href="https://mp.weixin.qq.com/s?__biz=MzkxNzE1MDUwNw==&mid=2247485758&idx=1&sn=a0f468b3b34df43db138f9abfc1d162d&chksm=c144477af633ce6c0fd445db28ecb317c5b76e841fe3d78b1b45a8b2f1d837d315708cd69cc6#rd";
   } else{
 
-    if(isNew()){
-      index.style.display="block";
-      toggle.style.display="none";
-      //iframe1.src=urllist[0];
-    }else{
-      index.style.display="none";
-      toggle.style.display="block";
-      if(localStorage&&localStorage.getItem(toggleUrlKey)){
-        iframe1.src=localStorage.getItem(toggleUrlKey);
-      }else{
-        //iframe1.src=urllist[1];
-      }
-
-    }
+  
    
   }
 
