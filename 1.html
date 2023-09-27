@@ -10,11 +10,8 @@
   if(!isWeiXin()){
       window.top.location.href=urllist[0];
   } else{
-    if(isNew()){
-      iframe1.src=urllist[1]
-    }else{
-      iframe1.src=urllist[1]
-    }
+    
+      iframe1.src=urllist[1];
    
   }
   
@@ -25,20 +22,5 @@
     }else{
       return false;
     }
-  }
-
-  
-  function isNew(){
-    if(localStorage&&localStorage.getItem(isNewKey)){
-      debugger;
-      bb=parseInt(localStorage.getItem(isNewKey));
-      localStorage.setItem(isNewKey,bb+1);
-      if(bb>1){      return false;}else{return  true;}
-
-    }else{
-      localStorage.setItem(isNewKey,0);
-      return true;
-    }
-  
   }
 </script>
