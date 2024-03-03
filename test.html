@@ -40,7 +40,7 @@
 
             <footer>
                 <ul class="icons">
-                <li><a target="_blank" onclick="copy()" title="">复制代码</a></li>
+                <li><a target="_blank" onclick="copy()" title="">复制源</a></li>
                
                     
                 </ul>
@@ -91,7 +91,7 @@
 	        element.blur();
 
 	        if(document.execCommand('copy')){
-	        alert("已复制到剪切板!");
+	        alert("已复制到剪切板!如果失效，可以等待更新后，再次复制。(0303)");
 	        }else{alert("error")}
 	    	element.remove();
 	}
