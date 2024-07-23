@@ -1,6 +1,6 @@
 <html>
 <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title ></title>
+
 </head>
 
 <body class="">   
@@ -85,7 +85,7 @@
             navigator.clipboard
             .writeText(config[2])
             .then(() => {
-                alert('复制成功:)')
+                alert('复制成功:)\n'+config[0])
             })
             .catch((err) => {
                 console.error('复制失败:', err)
@@ -93,8 +93,6 @@
             })
         aa=document.getElementsByTagName("img");
         aa[0].src=config[3];
-        bb=document.getElementsByTagName("title");
-        bb[0].innerHTML=config[0];
 
 	}
 
